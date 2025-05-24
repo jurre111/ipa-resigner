@@ -38,7 +38,7 @@ fi
 codes_availables=$(security find-identity -p codesigning -v | grep -o '".*"' | tr -d '"')
 echo "Available signing identities: $codes_availables"
 
-if [ "$SIGNING_IDENTITY" == "" ] || [[ $codes_availables != *$SIGNING_IDENTITY* ]];
+if [ "$SIGNING_IDENTITY" == "" ];
 then
   echo "The signing identity not exists."
   exit 1
