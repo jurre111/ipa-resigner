@@ -2,8 +2,7 @@
 
 IPA=$1
 PROVISIONING_PROFILE=$2
-DESTINATION_PATH=${3%/}
-SIGNING_IDENTITY=$4
+SIGNING_IDENTITY=$3
 
 #Args processing
 if [ "$IPA" == "" ];
