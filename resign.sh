@@ -2,7 +2,8 @@
 
 IPA=$1
 PROVISIONING_PROFILE=$2
-SIGNING_IDENTITY=$3
+DESTINATION_PATH=${3%/}
+SIGNING_IDENTITY=$4
 
 #Args processing
 if [ "$IPA" == "" ];
@@ -158,4 +159,3 @@ echo "Result IPA: ${IPA_RESIGNED_PATH}"
 echo
 echo "***************************"
 echo
-
